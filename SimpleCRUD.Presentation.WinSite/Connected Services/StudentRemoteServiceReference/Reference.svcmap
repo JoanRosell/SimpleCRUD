@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e2d6a4b2-c130-473c-b7bb-95a1d44fac89" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61965/Implementations/StudentRemoteService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="StudentRemoteService.xsd" MetadataType="Schema" ID="13ce2af6-7f24-4a7e-b1aa-86f536952d7d" SourceId="1" SourceUrl="http://localhost:61965/Implementations/StudentRemoteService.svc?xsd=xsd1" />
+    <MetadataFile FileName="StudentRemoteService.disco" MetadataType="Disco" ID="655ccffe-2819-4c0e-a42d-162a70fbba45" SourceId="1" SourceUrl="http://localhost:61965/Implementations/StudentRemoteService.svc?disco" />
+    <MetadataFile FileName="StudentRemoteService.wsdl" MetadataType="Wsdl" ID="f42dd9a2-cfb0-4550-b16c-c38182723019" SourceId="1" SourceUrl="http://localhost:61965/Implementations/StudentRemoteService.svc?wsdl" />
+    <MetadataFile FileName="StudentRemoteService1.xsd" MetadataType="Schema" ID="80cfdb3f-aa1a-4878-964d-851129acb66d" SourceId="1" SourceUrl="http://localhost:61965/Implementations/StudentRemoteService.svc?xsd=xsd0" />
+    <MetadataFile FileName="StudentRemoteService2.xsd" MetadataType="Schema" ID="86756587-9c65-4c4a-a171-3955b9833ef6" SourceId="1" SourceUrl="http://localhost:61965/Implementations/StudentRemoteService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
