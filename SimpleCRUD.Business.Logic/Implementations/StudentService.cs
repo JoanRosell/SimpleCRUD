@@ -74,11 +74,13 @@ namespace SimpleCRUD.Business.Logic.Implementations
 
         public void Update(StudentDTO studentData)
         {
-            Student student;
             using (var unitOfWork = new UnitOfWork(new SimpleCRUDContext()))
             {
-                student = unitOfWork.Students.Get(studentData.Id);
-                student = _mapper.Map<Student>(studentData);
+                Student student = unitOfWork.Students.Get(studentData.Id);
+                student.Name = studentData.Name;
+                student.Surname = studentData.Surname;
+                student.Birthday = studentData.Birthday;
+                student.Age = CalculateAge(student.Birthday);
                 unitOfWork.Complete();
             }
         }

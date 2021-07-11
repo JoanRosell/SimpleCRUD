@@ -2,9 +2,11 @@
 using SimpleCRUD.Business.Logic.Contracts;
 using SimpleCRUD.Business.Logic.Implementations;
 using System.Collections.Generic;
+using System.ServiceModel;
 
 namespace SimpleCRUD.Business.Services
 {
+    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
     public class StudentRemoteService : IStudentRemoteService
     {
         IStudentService _service;

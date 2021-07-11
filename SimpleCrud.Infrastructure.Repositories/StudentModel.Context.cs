@@ -16,7 +16,7 @@ namespace SimpleCrud.Infrastructure.Repositories
     public partial class SimpleCRUDContext : DbContext
     {
         public SimpleCRUDContext()
-            : base("name=SimpleCRUDEntities")
+            : base(System.Configuration.ConfigurationManager.ConnectionStrings["SimpleCRUDEntities"].ConnectionString)
         {
         }
     
@@ -26,5 +26,10 @@ namespace SimpleCrud.Infrastructure.Repositories
         }
     
         public virtual DbSet<Student> Students { get; set; }
+
+        private void FixEfProviderServicesProblem()
+        {
+            var instance = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
+        }
     }
 }
