@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\StudentRemoteServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -57,6 +64,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Connected Services\StudentRemoteServiceReference\SimpleCRUD.Presentation.WinSite.StudentRemoteServiceReference.StudentDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\StudentRemoteServiceReference\StudentRemoteService.wsdl" />
+    <None Include="Connected Services\StudentRemoteServiceReference\StudentRemoteService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\StudentRemoteServiceReference\StudentRemoteService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\StudentRemoteServiceReference\StudentRemoteService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +95,27 @@
       <Project>{f2b8d70b-8e50-4139-b580-97eebb9bb9e1}</Project>
       <Name>1.0 - SimpleCRUD.Business.Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\StudentRemoteServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\StudentRemoteServiceReference\StudentRemoteService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\StudentRemoteServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\StudentRemoteServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\StudentRemoteServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
