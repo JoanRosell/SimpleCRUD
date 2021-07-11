@@ -13,9 +13,9 @@ namespace SimpleCrud.Infrastructure.Repositories
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SimpleCRUDEntities : DbContext
+    public partial class SimpleCRUDContext : DbContext
     {
-        public SimpleCRUDEntities()
+        public SimpleCRUDContext()
             : base("name=SimpleCRUDEntities")
         {
         }

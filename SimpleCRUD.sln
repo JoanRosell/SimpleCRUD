@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.1 - SimpleCrud.Common.Log
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.0 - SimpleCrud.Common.Models", "SimpleCrud.Common.Models\4.0 - SimpleCrud.Common.Models.csproj", "{6AB28B02-1B0B-49E5-9E0C-7E127F05895C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.0 - SimpleCrud.Infrastructure.RepositoriesTests", "3.0 - SimpleCrud.Infrastructure.RepositoriesTests\3.0 - SimpleCrud.Infrastructure.RepositoriesTests.csproj", "{BC4F7037-0982-4E7B-8858-4FD5BD08DB6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{6AB28B02-1B0B-49E5-9E0C-7E127F05895C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AB28B02-1B0B-49E5-9E0C-7E127F05895C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AB28B02-1B0B-49E5-9E0C-7E127F05895C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4F7037-0982-4E7B-8858-4FD5BD08DB6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4F7037-0982-4E7B-8858-4FD5BD08DB6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4F7037-0982-4E7B-8858-4FD5BD08DB6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4F7037-0982-4E7B-8858-4FD5BD08DB6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{490524D7-8979-43BD-BD6F-FDD29FC03973} = {D7C0D385-B587-4156-9258-1EE8B8CABB26}
 		{C71D6B64-758C-4135-B9B7-EAC89DC0230B} = {E5221A42-6D4A-4EA6-8626-CCBF6F3B27A5}
 		{6AB28B02-1B0B-49E5-9E0C-7E127F05895C} = {E5221A42-6D4A-4EA6-8626-CCBF6F3B27A5}
+		{BC4F7037-0982-4E7B-8858-4FD5BD08DB6F} = {D7C0D385-B587-4156-9258-1EE8B8CABB26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED5B0367-B519-43F9-847D-314945463092}

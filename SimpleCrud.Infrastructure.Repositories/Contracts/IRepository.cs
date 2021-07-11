@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace SimpleCrud.Infrastructure.Repositories.Contracts
 {
-    interface IRepository<TEntity> where TEntity : class
+    public interface IRepository<TEntity> where TEntity : class
     {
         TEntity Get(int id);
 

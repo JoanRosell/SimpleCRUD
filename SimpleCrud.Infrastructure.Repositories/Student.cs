@@ -19,5 +19,26 @@ namespace SimpleCrud.Infrastructure.Repositories
         public string Surname { get; set; }
         public System.DateTime Birthday { get; set; }
         public int Age { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Student student &&
+                   Id == student.Id &&
+                   Name == student.Name &&
+                   Surname == student.Surname &&
+                   Birthday == student.Birthday &&
+                   Age == student.Age;
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = 1459635396;
+            hashCode = hashCode * -1521134295 + Id.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Name);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Surname);
+            hashCode = hashCode * -1521134295 + Birthday.GetHashCode();
+            hashCode = hashCode * -1521134295 + Age.GetHashCode();
+            return hashCode;
+        }
     }
 }
